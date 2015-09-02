@@ -5,6 +5,8 @@ Quizes::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'quizes#index'
+  resources :quizes
+  get 'quiz1', to: 'quizes#quiz1'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

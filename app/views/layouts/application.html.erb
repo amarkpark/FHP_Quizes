@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quizes</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<div classs="col-xs-12">
+			<%= link_to root_path image_tag 'sAMPlogo.png', class: 'logo' do %>
+			<% end %>
+		</div>
+	</header>
+
+<br class="clear" />
 
 <%= yield %>
 
