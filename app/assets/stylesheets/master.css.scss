@@ -9,11 +9,28 @@
 .clear {
 	clear:both;
 }
-.logo {
-	position: relative;
-	border-radius: 100%;
+
+.amplogo {
+	padding: 12px;
 	height: 112px;
-	width: 112px;
+	background-color: #e3e0e7;
+	float: left;
+}
+
+.notes {
+	color: Indigo;
+	padding: 20px;
+	height: 112px;
+	background-color: #e3e0e7;
+	float: right;
+}
+
+.mainbody {
+	padding:12px;
+}
+
+a {
+	color: #378200;
 }
 
 h1 {
@@ -24,8 +41,12 @@ h2 {
 	font-family: 'Fira Sans', sans-serif;
 }
 
+header {
+	background-color: #e3e0e7;
+}
+
 body {
 		/* Trebuchet-based sans serif stack */
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-	font-size:14px;
+	font-size:18px;
 }
