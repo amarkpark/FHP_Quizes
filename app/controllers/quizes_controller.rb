@@ -4,4 +4,7 @@ class QuizesController < ApplicationController
 
 	def quiz1
 	end
+
+	def quiz2
+	end
 end

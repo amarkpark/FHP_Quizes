@@ -4,9 +4,13 @@ Quizes::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  # 20150909 HOLY CRAP does my initial spelling error muck with routes!
   root 'quizes#index'
   resources :quizes
+
+  # adds a URL pattern for the page
   get 'quiz1', to: 'quizes#quiz1'
+  get 'quiz2', to: 'quizes#quiz2'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
