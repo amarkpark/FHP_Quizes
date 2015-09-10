@@ -1,2 +1,28 @@
-# 20150909 Quiz2.html.erb
+<!-- 20150909 Quiz2.html.erb -->
 
+<div  class="col-xs-10 col-xs-offset-1">
+
+	<%= simple_form_for Comment.new do |f| %>
+	  <%= f.input :data %>
+	  <%= f.input :author %>
+	  <%= f.input :email %>
+	  <br />
+	  <%= f.button :submit %>
+	<% end %>
+
+</div>
+
+<p><%= @comments.inspect %></p>
+
+<% @comments.each do |comment| %>
+	
+	<div class="dispbox col-xs-10 col-xs-offset-1">
+
+		<p class="text-center">"<%= comment.data %>"</p>
+		<small class="pull-right"><%= comment.author %> | <%= comment.email %>
+	</div>
+
+<% end %>
+
+
+<br class="clear" />
